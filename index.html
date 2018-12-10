@@ -89,12 +89,13 @@
       <div class="row">
         <a name="topGraphic"/>
         <div class="small-9 columns">
-          <img src="images/cflogo.jpg" alt="" style="height: 600px;" />
+          <img src="images/cflogo.png" alt="" style="margin-top: 100px;" />
+          <h2 class="textCenter" id="countdown"></h2>
         </div>
 
         <div class="small-3 columns">
           <a href="#about">
-            <img src="images/arrow.gif" style="width: 150px; margin-top: 200px;" alt="Posuň stránku níž" />
+            <img src="images/arrow.gif" style="width: 150px; margin: 100px 0 0 50px;" alt="Posuň stránku níž" />
           </a>
         </div>
       </div>
@@ -130,25 +131,22 @@
           <div class="whiteCover"></div>
           <div class="content">
             <h1 class="textCenter">Informace k zasedání 19.-20. ledna 2019</h1>
-            <h2 class="textCenter" id="countdown">
-              Místo bude ještě upřesněno.
-            </h2>
 
             <a id="block_registrace" href="?p=registrace#info" onclick="javascript:$('#registrace').css('display', 'block');$('#popupBlackBack').css('display', 'block');window.dispatchEvent(new Event('resize'));">
               <div>
                 <span>
-                  Co po registraci?
+                  REGISTRACE ČLENŮ <br /> A PŘÍZNIVCŮ
                 </span>
               </div>
             </a>
 
-            <a id="block_zapojSe" href="?p=zapojSe#info" onclick="javascript:$('#zapojse').css('display', 'block');$('#popupBlackBack').css('display', 'block');window.dispatchEvent(new Event('resize'));">
+            <!-- <a id="block_zapojSe" href="?p=zapojSe#info" onclick="javascript:$('#zapojse').css('display', 'block');$('#popupBlackBack').css('display', 'block');window.dispatchEvent(new Event('resize'));">
               <div>
                 <span>
                   Zapoj se (dobrovolníci)
                 </span>
               </div>
-            </a>
+            </a> -->
 
             <a id="block_preParty" href="?p=preParty#info" onclick="javascript:$('#preparty').css('display', 'block');$('#popupBlackBack').css('display', 'block');window.dispatchEvent(new Event('resize'));">
               <div>
@@ -189,6 +187,14 @@
                 -->
                 <span>
                   Živý přenos
+                </span>
+              </div>
+            </a>
+
+            <a id="block_parkovani" href="?p=program#info" onclick="javascript:$('#parkovani').css('display', 'block');$('#popupBlackBack').css('display', 'block');window.dispatchEvent(new Event('resize'));">
+              <div>
+                <span>
+                  KDE ZAPARKUJI?
                 </span>
               </div>
             </a>
@@ -317,6 +323,33 @@
           <p>
             Pro ty, kteří se nemohou dočkat a přijedou už v pátek jsme zabookovali Cool bar, který je cca 10 minut chůze od hotelu Palcát (místo konání CF) a asi minutu od historického centra Tábora a krásného Žižkova náměstí.
             V Coolu je k dispozici jukebox, dobré jídlo, pití a super prostředí na warm-up party, takže vše, co budeme potřebovat.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="parkovani" class="popup">
+      <div class="inner">
+        <div onclick="javascript:$('.popup').css('display', 'none');$('#popupBlackBack').css('display', 'none');" class="close"></div>
+
+        <div class="inner-content">
+          <h1 class="textLeft">KDE ZAPARKUJI?</h1>
+
+          <!-- <div class="iframe">
+            <div id="mapa-preparty" class="osm-map" onload="javascript:$('osm-map').css('width','100%');"></div>
+          </div> -->
+
+          <h3><a href="https://www.visittabor.eu/parkovani">přehledná mapa</a></h3>
+
+          <p>
+            Ve vnitřním městě Tábor jsou dvě oblasti placeného stání – Staré město a Nové město.
+            V oblasti Starého města jsou k dispozici parkoviště na Žižkově náměstí, na náměstí Mikuláše z Husi, U pivovaru (parkoviště u hotelu Dvořák, ul. Na Parkánech za cenu 10Kč/hod, 40Kč/den) v Palackého ulici, na Tržním náměstí Dále v Parking centru (krytém parkovacím domě) u Jordánu - pod Střelnicí, ulice ČSL armády. Kromě uvedených parkovišť je stání v zóně Starého města zakázáno. Při nerespektování tohoto zákazu hrozí odtažení vozidla nebo zajištění vozidla blokovacím zařízením. Doba placeného parkování: Po-So 08.00–20.00.
+            V oblasti Nového města je zvýhodněné parkování v blízkosti autobusového a vlakového nádraží v ulicích Jeronýmova, Šafaříkova, Chocholouškova, U Bechyňské dráhy, před nádražím ČD a v ulici Valdenská (122 míst). Dále je možné využít placených stání v ulicích Bílkova, ulice 9. května, Erbenova, Kollárova, Jiráskova, Dobrovského a Vančurova, nebo na krytém parkovišti pod obchodním domem Dvořák. Doba placeného parkování: Po-Pá 08.00–18.00 a So 08.00–12.00
+            Pozor na zóny vyhrazeného parkování pro rezidenty (obyvatele s trvalým bydlištěm) a abonenty (organizace se sídlem nebo provozovnou v dané oblasti). V těchto zónách je dovoleno parkovat jen v určité hodiny, sledujte cedule na parkovištích.
+            Platba je možná v hotovosti, platební kartou a zasláním SMS. Více informací včetně ceníku zde.
+            Bezplatné parkování je ve všech ostatních částech města. Doporučujeme využít parkoviště u plaveckého bazénu v Kvapilově ulici, případně parkoviště v Jordánské ulici (odtud je ale prudký výstup do kopce do centra).
+
           </p>
 
         </div>
@@ -594,8 +627,8 @@
           <h1 class="textLeft">Pro média</h1>
           <p>
             V případě zájmu o účast na zasedání Celostátního fóra Pirátské strany,
-            které se uskuteční v lednu 2018 v Táboře, je nutné provést akreditaci,
-            a to <b>nejpozději do do neděle 6.1.2019 23:59</b>. Bez ní nebude vstup umožněn.
+            které se uskuteční v lednu v Táboře, je nutné provést akreditaci,
+            a to <b>nejpozději do neděle 6.1.2019 23:59</b>. Bez ní nebude vstup umožněn.
           </p>
 
           <p>
@@ -613,7 +646,6 @@
 
           Jiří Roubíček <a href="mailto:jirka.rouba@gmail.com">jirka.rouba@gmail.com</a>, +420 775 010 651
 
-
           <p>
             Pro akreditované novináře bude připraveno zázemí a dle domluvy lze zajistit i
             rozhovory s konkrétními účastníky v určené časy.
@@ -629,8 +661,8 @@
           <h2>Ke stažení</h2>
           <div class="row">
             <div class="col">
-                <img src="images/logoAkce.png" alt="logo akce" /><br />
-                Logo akce <a href="images/cf2018.png">rastr</a>, <a href="images/cf2018.svg">vektor</a>
+                <img src="images/cflogo.png" alt="logo akce" style="width: 200px;" /><br />
+                Logo akce <a href="images/Pirati-CF_logo.png">rastr</a>, <a href="images/cf2019.svg">vektor</a>
             </div>
             <div class="col">
                 <img src="https://wiki.pirati.cz/_media/rp/pid/gman/plachta_bez_okraje.png?w=200&tok=a7daed" alt="logo Pirátské strany" /><br />
