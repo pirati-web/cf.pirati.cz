@@ -78,9 +78,9 @@ div.content {
 }
 
 #topGraphic {
-  background: url("images/9699807090_cda07a6064_o.jpg") no-repeat fixed;
+  background: url("images/back1.jpg") no-repeat fixed;
   background-size: cover;
-  background-position: center 70%;
+  background-position: 90% top;
   width: 100%;
   height: 100%;
   position: relative;
